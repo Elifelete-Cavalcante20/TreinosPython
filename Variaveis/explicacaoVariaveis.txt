@@ -1,0 +1,77 @@
+Em Python não existe um comando para criar uma variável. Uma nova varável é criada sempre que se atribui um valor a ela pela primeira vez.
+
+Exemplo: 
+
+x = 5
+y = "Eli"
+
+print(x)
+print(y)
+
+As variáveis também nao precisam ser declaradas como algum tipo específico (Int, Float ou String) e podem até mesmo mudar depois de terem sido definidas!
+
+x = 5 (x equivale uma variável inteira)
+x = "Eli" (x agora equivale a uma string)
+
+Caso queira definir o tipo de dado de uma variável isto pode ser feito com conversão.
+
+Exemplo: 
+
+x = str(3) #Aqui x terá o valor de uma STRING equivalente a '3'
+x = int(3) #Aqui x terá o valor de um número INTERIO equivalente a 3
+x = float(3) #Aqui x terá o valor de um número com casa decimal equivalente a 3.0 
+
+Pode-se obter o tipo de dado de uma variável utilizando a funçao "type()"
+
+Exemplo: 
+print (type(x))
+
+Python permite atribuir valores a multiplas variáveis em uma só linha.
+Exemplo: 
+
+x, y, z = "Laranja", 155, 3.0
+print (x)
+print (y)
+print (z)
+
+Python também permite atribuir o MESMO valor a várias variáveis em uma mesma linha 
+Exemplo: 
+
+x = y = z = "Laranja"
+print (x)
+print (y)
+print (z)
+
+Descompactaçao
+Caso exista uma coleçao de valores em uma lista, tupla etc...Python permite extrair os valores em variáveis (Isso é chamado de descompactaçao)
+Exemplo: 
+
+frutas ["laranja", "banana", "cereja"]
+x, y, z = frutas
+print (x)
+print (y)
+print (z)
+
+Variaveis globais: 
+
+Para criar um variavel global assim como em praticamente todas as linguagens de programaçao deve-se declarar a variável fora de uma funçao para que possa ser utilizada em todo o código. Porém em python existe uma maneira de declarar uma variável global dentro de uma funçao utilizando a palavra-chave "global" 
+Exemplo: 
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+Além disso, a palavra-chave "global" permite a alteraçao do valor de uma variavel global de dentro de uma funçao 
+Exemplo: 
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)

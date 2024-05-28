@@ -1,0 +1,20 @@
+Identaçao como obrigaçao!
+Python utiliza os espaçao de identadaçao como indicador de um novo bloco de funcoes! Tornando a identaçao parte importantissima desta linguagem de programçao.  Por isso ao fazer uma nova funçao como "IF" ou "FOR", lembre-se de identar seu código ;) (Vale lembra que as linhas também não finalizadas com ";" e sim quando uma nova linha é inicada).
+
+Errado: 
+
+if 5 > 2:
+print ("Código com erro de sintaxe!")
+
+Certo: 
+
+if 5 > 2: 
+    print (Código sem erro de sintaxe!)
+
+Vale lembrar também que a qunatidade de "espaços" dentro do código na hora de identar fica a critério do programador (Contanto que o padráo seja seguido dentro do mesmo bloco)
+
+Variáveis: 
+
+Comentários: 
+
+Em Python os comentário sáo feitos utilizando o caractere de "#" (Jogo da velha) para que se posso colocar abreveaçoes dentro do código e assim o sistema entenda que como algo a ser ignorado no momento da compilaçao.
